@@ -106,7 +106,7 @@ export default {
             this.gameOn = true;
             this.newGameBtn = true;
             this.startTitle = "Play Again";
-            this.playerTurn = 1;
+            this.playerTurn = Math.random() > 0.5 ? 1 : 2;
             this.welcomeScreen = false;
             this.winner = 0;
         },
